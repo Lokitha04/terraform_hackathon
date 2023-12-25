@@ -20,8 +20,4 @@ workflows:
           context: terraform
           requires:
             - terraform/plan
-      - terraform/apply:
-          attach-workspace: true
-          context: terraform
-          requires:
-            - terraform/plan
+      
